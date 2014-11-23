@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/screen.js"></script>
+	</head>
+	<body>
+		<div id="title">simple chat</div>
+		<div class="container-fulid">
+			<div class="row-fluid">
+				<div class="span4">			
+					<div class="well sidebar-nav">
+						<ul class="nav nav-list">
+							<li>
+								<input id="name" type="text" placeholder="nickname" width="20">
+							</li>
+							<li>
+								<div class="input">
+									<textarea class="xxlarge" id="input_message" placeholder="message"></textarea>
+								</div>
+							</li>
+							<li>
+								<button id="send_message" type="submit" class="btn" onclick='sendMessage()'>send message</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="messageArea" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="panel-heading">Messages</div>
+				<div id="messageBody" class="panel-body">
+			</div>
+		</div>
+	</body>
+</html>
